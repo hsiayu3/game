@@ -1238,26 +1238,10 @@ window.halFadeIn = function(trackName, duration) {
 
 </tw-passagedata><tw-passagedata pid="3" name="楔子1" tags="片头1" position="100,350" size="100,100">(if:$unlocked_count &lt; 1)[(stop:)(transition:&quot;blur&quot;)+(transition-time:2s)+(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://image2url.com/r2/default/images/1769889407642-e4f56230-35bb-4ec0-b1db-6d0e5504c257.gif&quot; class=&quot;photo-frame&quot;&gt;]
 (live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-time:2s)+(transition-delay:1.5s)[我想，很多年以后，
-我依旧会清晰回忆起//&#39;&#39;二〇二〇年&#39;&#39;//，我和李晓那个逃课去山上寻找外星人的//&#39;&#39;夏天&#39;&#39;// 。]](live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-delay:3s)+(transition-time:2s)[那年我//&#39;&#39;十七岁&#39;&#39;// 。]](live: 4s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)[
-    [[&#39;&#39;Continued&#39;&#39;-&gt;楔子2]]]
-    {  (track: &#39;reflection&#39;, &#39;loop&#39;, true)
-  (track: &#39;reflection&#39;, &#39;playwhenpossible&#39;)
-  (track: &#39;reflection&#39;, &#39;fadein&#39;, 4)
-  
-  (track: &#39;rains_talk&#39;, &#39;loop&#39;, true)
-  (track: &#39;rains_talk&#39;, &#39;playwhenpossible&#39;)
-  (track: &#39;rains_talk&#39;, &#39;fadein&#39;, 4)
-}
-]
-]
-(else:)[
-[(stop:)(transition:&quot;blur&quot;)+(transition-time:2s)+(align:&quot;=&gt;&lt;=&quot;)[&lt;img src=&quot;https://image2url.com/r2/default/images/1769889407642-e4f56230-35bb-4ec0-b1db-6d0e5504c257.gif&quot; class=&quot;photo-frame&quot;&gt;]
-(live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-time:2s)+(transition-delay:1.5s)[我想，很多年以后，
-我依旧会清晰回忆起//&#39;&#39;二〇二〇年&#39;&#39;//，我和李晓那个逃课去山上寻找外星人的//&#39;&#39;夏天&#39;&#39;// 。]](live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-delay:3s)+(transition-time:2s)[那年我//&#39;&#39;十七岁&#39;&#39;// 。]](live: 4s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)[
-    [[&#39;&#39;Continued&#39;&#39;-&gt;楔子2]]]
-    (live: 4s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;) [[[&#39;&#39;Skip Prologue&#39;&#39;-&gt;main menu]]]
-  ]
-]]
+我依旧会清晰回忆起//&#39;&#39;二〇二〇年&#39;&#39;//，我和李晓那个逃课去山上寻找外星人的//&#39;&#39;夏天&#39;&#39;// 。]](live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-delay:3s)+(transition-time:2s)[那年我//&#39;&#39;十七岁&#39;&#39;// 。]]
+
+(live: 5s)[(stop:)(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)[(link-goto: &quot;&#39;&#39;Continued&#39;&#39;&quot;, &quot;楔子2&quot;)&lt;br&gt;(if: (saved-games:) contains &quot;gamedata&quot;)[&lt;br&gt;(link-goto: &quot;&#39;&#39;Skip Prologue&#39;&#39;&quot;, &quot;main menu&quot;) ] ]]
+
 
 {  (track: &#39;reflection&#39;, &#39;loop&#39;, true)
   (track: &#39;reflection&#39;, &#39;playwhenpossible&#39;)
@@ -1422,24 +1406,16 @@ window.halFadeIn = function(trackName, duration) {
 {(track: &#39;radio&#39;, &#39;fadein&#39;,2)
 (track: &#39;radio&#39;, &#39;loop&#39;,false)
 (track: &#39;radio&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="17" name="gamemenue" tags="header" position="225,0" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="startup" tags="startup" position="125,0" size="100,100">(set: $isMenuOpen to false)(set:$siao to 0)(set: $siao1 to 0)(set: $siao2 to 0)(set: $energy to 50)(set: $maxEnergy to 50)(set: $romanticism to 0)(set: $realism to 0) (set: $office to 0)  (set: $zhang to 0)  (set: $ending1_unlocked to false)(set: $ending2_unlocked to false)(set: $ending3_unlocked to false)(set: $ending4_unlocked to false)(set: $total_endings to 4)
-(set: $unlocked_count to 0)</tw-passagedata><tw-passagedata pid="19" name="Introduction" tags="" position="100,300" size="100,100">(stop:)(text-colour:&quot;pink&quot;) + (align:&quot;=&gt;&lt;=&quot;)[
+(set: $unlocked_count to 0)</tw-passagedata><tw-passagedata pid="19" name="Introduction" tags="" position="100,300" size="100,100">(stop:)(text-colour:&quot;#7ab8cc&quot;) + (align:&quot;=&gt;&lt;=&quot;)[
     &lt;span style=&quot;font-size: 2em;&quot;&gt;&#39;&#39;Disclaimer&#39;&#39;&lt;/span&gt;]
     
-(live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-time:2s)+(transition-delay:1.5s)[This game contains content depicting&#39;&#39; LGBTQ&#39;&#39; individuals and related themes.]]
-(live: 50ms)[(stop:)(transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-delay:3s)+(transition-time:2s)[For the best experience, please play on a &#39;&#39;desktop&#39;&#39; or &#39;&#39;laptop&#39;&#39; computer.]]
-(live: 4s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)+(transition-time:2s)[Please note that the game text is designed to be read in a vertical scrolling format, from top to&#39;&#39; bottom.&#39;&#39;]]
-
-(live: 7s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;pink&quot;)[
+[&lt;div class=&quot;walk-sim-container1&quot; style=&quot;border-radius: 25px; overflow: hidden; line-height: 0; position: relative;&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hsiayu3/twine-asset/main/bdaa01cef5d23eccb7b95254e1555d0c.gif&quot; class=&quot;walk-sim-image1&quot;style=&quot;width: 70%; height: auto; border-radius: 25px; display: block;&quot;&gt;&lt;/div&gt;]
+    
+    (text-colour:#7ab8cc)+(align:&quot;=&gt;&lt;=&quot;)[(set: $text to &quot;This game contains content depicting&#39;&#39; LGBTQ&#39;&#39; individuals and related themes.\n\nFor the best experience, please play on a &#39;&#39;desktop&#39;&#39; or &#39;&#39;laptop&#39;&#39; computer.\n\nPlease note that the game text is designed to be read in a vertical scrolling format, from top to bottom.&quot;)(set: $counter to 0)(live: 25ms)[(set: $counter to it + 1)(print: $text&#39;s (range: 1, $counter))(if: $counter &gt;= $text&#39;s length)[(stop:)]]]
+(live: 9s)[ (stop:) (transition:&quot;blur&quot;)+(align:&quot;=&gt;&lt;=&quot;)+(text-colour:&quot;#7ab8cc&quot;)[
     [[&#39;&#39;Continued&#39;&#39;-&gt;楔子1]]
   ]
-]
-
-{
-(if: (saved-games:) contains &quot;gamedata&quot;)[
-    (load-game: &quot;gamedata&quot;)
-]
-}
-</tw-passagedata><tw-passagedata pid="20" name="hal.tracks" tags="" position="250,625" size="100,100">amore:https://raw.githubusercontent.com/hsiayu3/twine-asset/main/%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80%20(%E3%81%95%E3%81%8B%E3%82%82%E3%81%A8%20%E3%82%8A%E3%82%85%E3%81%86%E3%81%84%E3%81%A1)%20-%20Amore%20(%E7%88%B1).ogg
+]</tw-passagedata><tw-passagedata pid="20" name="hal.tracks" tags="" position="250,625" size="100,100">amore:https://raw.githubusercontent.com/hsiayu3/twine-asset/main/%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80%20(%E3%81%95%E3%81%8B%E3%82%82%E3%81%A8%20%E3%82%8A%E3%82%85%E3%81%86%E3%81%84%E3%81%A1)%20-%20Amore%20(%E7%88%B1).ogg
 
 reflection:https://raw.githubusercontent.com/hsiayu3/twine-asset/main/%E6%97%A5%E5%90%91%E6%95%8F%E6%96%87%20-%20Reflections.ogg
 
@@ -5087,7 +5063,7 @@ What should I do in the meantime?&quot;)(set: $counter to 0)(live: 30ms)[(set: $
     ]
 }]
 
-(set: $isMenuOpen to false, $siao to 0, $petition to 0, $energy to 50, $maxEnergy to 50, $romanticism to 0, $realism to 0, $office to 0, $张 to 0)
+(set: $isMenuOpen to false, $siao to 0, $petition to 0, $energy to 50, $maxEnergy to 50, $romanticism to 0, $realism to 0, $office to 0, $zhang to 0)
 
 </tw-passagedata><tw-passagedata pid="129" name="main menu1" tags="menu" position="200,125" size="100,100">(after: 2s)[
     &lt;div class=&quot;title-box&quot;&gt;
@@ -7814,7 +7790,9 @@ What should I do in the meantime?&quot;)(set: $counter to 0)(live: 30ms)[(set: $
 &lt;script&gt;
 (function() {
     const content = [
-        { text: &quot;我对你的思念如此尖锐，恰似苔草细长的叶子，把手指划破。 ——Зинаида Быкова&quot;, speed: 40 },
+        { text: &quot;我对你的思念如此尖锐，&quot;, speed: 40 },
+           { text: &quot;恰似苔草细长的叶子，把手指划破。 &quot;, speed: 40 },
+   { text: &quot; ——Зинаида Быкова&quot;, speed: 40 },
 
     ];
 
